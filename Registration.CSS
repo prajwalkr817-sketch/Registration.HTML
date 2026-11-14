@@ -1,0 +1,158 @@
+ body {
+    background-image: url("Registration Form.gif");
+    background-size:200px;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    padding-left: 205px;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #faebd7;
+    padding: 15px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(11, 0, 0, 0.1);
+}
+.header-gif {
+    width: 120px;
+    height: auto;
+}
+
+h1 {
+    margin: 0;
+    font-size: 44px;
+    color: #2c3e50;
+    white-space: nowrap;
+}
+.content{
+    background-color:blanchedalmond;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.form-container {
+    max-width: 600px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.form-container > h2, 
+.form-container > p {
+    text-align: center;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 5px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.form-group.stacked {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group.stacked label {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+label {
+    width: 160px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="password"],
+select,
+textarea {
+    flex: 1;
+    width: 100%;
+    min-width: 0;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+    height: 80px;
+}
+
+.inline-group {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.inline-group label {
+    font-weight: normal;
+    display: inline;
+    width: auto;
+}
+
+.declaration-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.declaration-group input[type="checkbox"] {
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+}
+
+button[type="reset"] {
+    background-color: #dc3545;
+    color: white;
+}

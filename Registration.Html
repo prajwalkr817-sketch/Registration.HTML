@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admission Registration Form</title>
+    <!-- linking separate CSS file -->
+   <link rel="stylesheet" href="Registration.CSS">
+</head>
+<body>
+
+    <!-- Task 1 : Adding a form heading and a short description. -->
+    <div class="content">
+    <h1>College Admission Registration Form</h1>
+    </div>
+    <p><u>"Please fill out the form below with your accurate details to apply for admission for the upcoming academic year."</u></p>
+
+    <!-- Task 2 : Collect the student's full name, email, phone number, date of birth and password. -->
+
+    <form action="#" method="post" enctype="multipart/form-data">
+
+    <!-- Fieldset 1: Personal Information. -->
+     <fieldset>
+        <legend>Personal Information</legend>
+    
+        <div class="form-group">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required placeholder="example@domain.com">
+        </div>
+        
+        <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <div class="form-group">
+                <label type="Phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="10-digit mobile number">
+        </div>
+
+
+        <div class="form-group">
+                <label for="password">Create Password:</label>
+                <input type="password" id="password" name="password" minlength="6" required placeholder="At least 6 characters">
+        </div>
+
+    <!-- Task 3: Adding Radio buttons for gender. -->
+     
+    <div class="form-group">
+        <label>Gender:</label>
+        <div class="inline-group">
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="other"> Other</label>
+        </div>
+        </div>
+
+        <!-- Task 6: Adding a textarea for the student's address. -->
+
+        <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required placeholder="Enter your residential address"></textarea>
+        </div>
+        </fieldset>
+
+        <!--Task 4 (Fieldset 2): Academic Details & Course Preferences -->
+    
+    <fieldset>
+
+<legend>Academic Details & Course Preferences</legend>
+
+<div class="form-group">
+        <label for="course">Select Course:</label>
+        <select id="course" name="course" required>
+                <option value="" disabled selected>-- Select a Course --</option>
+                <option value="btech_cse">B.Tech CSE</option>
+                <option value="btech_aiml">B.Tech AI/ML</option>
+                <option value="bba">BBA</option>
+                <option value="bca">BCA</option>
+</select>
+</div>
+
+        <!-- Task 5: Adding checkboxes for interests such as coding, sports, music and reading.  -->
+         
+        <div class="form-group">
+                <label>Interests / Hobbies:</label>
+                <div class="inline-group">
+                        <label><input type="checkbox" name="interests" value="coding"> Coding</label>
+                        <label><input type="checkbox" name="interests" value="sports"> Sports</label>
+                        <label><input type="checkbox" name="interests" value="music"> Music</label>
+                        <label><input type="checkbox" name="interests" value="reading"> Reading</label>
+                </div>
+        </div>
+</fieldset>
+
+        <!-- Task 7 & 8 (Fieldset 3): Documents & Declaration -->
+        
+        <fieldset>
+                <legend>Documents & Declaration</legend>
+                <div class="form-group">
+                        <label for="photo">Upload Photograph:</label>
+                        <input type="file" id="photo" name="photo" accept="image/*" required>
+                </div>
+                
+                <div class="form-group">
+                        <label for="documents">Upload Supporting Documents (PDF):</label>
+                        <input type="file" id="documents" name="documents" accept=".pdf" required>
+                </div>
+                
+                <div class="form-group">
+                        <label class="inline-group">
+                                <input type="checkbox" name="declaration" required> I hereby declare that the information provided above is true and correct to the best of my knowledge.
+                        </label>
+                </div>
+        </fieldset>
+
+        <!-- Task 9: Submit and Reset Buttons -->
+
+<div class="button-group">
+        <button type="submit">Submit Application</button>
+        <button type="reset">Reset Form</button>
+</div>
+</form>
+</body>
+</html>
